@@ -1,0 +1,39 @@
+I. Navigate: The first step that you will provide evidence for in your log file is to view the following using Linux commands: 
+a. Current directory:
+pwd 
+b. Current user: 
+whoami
+ 
+II. File Permissions: Locate the “whoownsme.txt” file and confirm that all users have the ability to execute the file. 
+Find . -name "who*"
+chmod a+x ~/workspace/whoownsme.txt (a specifies all user groups/ +x adds execution rights)
+ls -al (read after -) 
+
+III. Create Files: Demonstrate your ability to utilize various Linux commands to create text files in unique ways. Create these files in the workspace directory. Ensure the commands in your log file 
+show that your text files were created with two different methods. Create the following files: 
+a. A text file using the vi editor that includes a paragraph of text explaining what you believe is the most complicated part of the final project 
+vi
+i
+" "
+<esc>
+:w FinalProjectParagraph
+:x
+b. A text file showing the current month, day, and time (title this file Time_File.txt) 
+echo `date` > Time_File.txt 
+
+IV. In the workspace directory, create a new directory titled Milestone_Files. 
+mkdir Milestone_Files 
+
+V. Modify and Move: Utilize Linux commands to rename files and move them to the Milestone_Files directory. Add “_MOVED” to the end of the file name. Remember that your modified files should use an appropriate naming 
+convention such as “XXXX_XXXX_MOVED.txt.” 
+
+mv FinalProjectParagraph Milestone_Files
+cd Milestone_Files
+mv FinalProjectParagraph FinalProjectParagraph_MOVED
+
+mv Time_File.txt Milestone_Files
+cd Milestone_Files 
+mv Time_File.txt Time_File_MOVED 
+
+VI. Create a log file of all the commands you have utilized to this point. Title this file Log_File.txt and download it for submission.
+nano Log_File.txt

@@ -1,0 +1,16 @@
+   28  whoami
+   29  pwd
+   30  ls
+   31  man ls
+   32  ls -a
+   33  grep -i 'lastbackup'*.txt
+   34  grep 'lastbackup' *.txt
+   35  find . 'whoownsme.txt' 
+   36  ls -al
+   37  chmod a+x whoownsme.txt
+   38  ls a-l
+   39  ls -al
+   40  top
+   41  history > Bearings_Log_File.txt
+   42  history 14 > Bearings_Log_File.txt
+   43  history 16 > Bearings_Log_File.txt

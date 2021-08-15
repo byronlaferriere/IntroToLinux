@@ -1,0 +1,23 @@
+  
+   44  mkdir NEW OLD BACKUP
+   45  nano Personal_Content.txt
+   46  df > Free_Space_Content.txt
+   47  touch Directory_Content.txt
+   48  ls -al >> Directory_Content.txt
+   54  echo Directory_Content.txt | cat Directory_Content.txt | tee Copied_Content.txt
+   60  vi Time_File.txt
+   62  mv Copied_Content.txt NEW
+   63  mv Directory_Content.txt NEW
+   64  mv Free_Space_Content.txt NEW
+   65  mv Personal_Content.txt NEW
+   66  mv Time_File.txt NEW
+   68  cd NEW
+   72  cp Copied_Content.txt OLD/Copied_Content_OLD.txt
+   73  cp Copied_Content.txt /home/codio/workspace/OLD/Copied_Content_OLD.txt
+   74  cp Directory_Content.txt /home/codio/workspace/OLD/Directory_Content_OLD.txt
+   75  cp Free_Space_Content.txt /home/codio/workspace/OLD/Free_Space_Content_OLD.txt
+   76  cp Personal_Content.txt /home/codio/workspace/OLD/Personal_Content_OLD.txt
+   77  cp Time_File.txt /home/codio/workspace/OLD/Time_File_OLD.txt
+   78  history > Tasks_Log_File.txt
+   79  mv Tasks_Log_File.txt /home/codio/workspace
+   80  history > Tasks_Log_File.txt1
